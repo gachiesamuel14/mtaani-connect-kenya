@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mtaani Connect 🇰🇪 | Location Dating Kenya</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💘</text></svg>">
+</head>
+<body>
+  <header>
+    <h1>Mtaani Connect 🇰🇪</h1>
+    <p>Connect with people near you in Kenya</p>
+    <div class="filters">
+      <label>County: 
+        <select id="county-filter">
+          <option value="all">All</option>
+          <option value="Nairobi">Nairobi</option>
+          <option value="Mombasa">Mombasa</option>
+          <option value="Kisumu">Kisumu</option>
+          <option value="Kiambu">Kiambu</option>
+          <option value="Nakuru">Nakuru</option>
+        </select>
+      </label>
+      <button id="request-location">Enable Location</button>
+    </div>
+  </header>
+  <main>
+    <div id="profile-card" class="profile-card">
+      <!-- filled by JS -->
+    </div>
+    <div id="matches-section" class="matches-section">
+      <h3>Your Matches</h3>
+      <ul id="matches-list"></ul>
+    </div>
+  </main>
+  <footer>
+    <p>MVP Demo • Full version coming with auth, real chat, M-Pesa</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
